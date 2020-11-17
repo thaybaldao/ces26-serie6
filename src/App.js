@@ -10,6 +10,7 @@ class App extends Component {
                    "1", "2", "3", "*",
                    "0", ".", "+", "-",
                    "<-", "=" ];
+
     const { set, evaluate, deleteLastEntry, clear} = this.props;
 
     return (
@@ -18,7 +19,9 @@ class App extends Component {
           <input type="text" value={this.props.expression} />
         </div>
         <div className="buttons">
-          {btns.map((item, key) => {
+          {
+            // creates keyboard buttons and sets up theirs onClick methods
+            btns.map((item, key) => {
               if(item === "C"){
                 return(
                   <button onClick={ clear.bind(this) } key={key}>{item}</button>

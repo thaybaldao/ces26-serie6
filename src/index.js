@@ -5,8 +5,10 @@ import configureStore from "./redux/store";
 import './index.css';
 import App from './App';
 
-// changed the render
 ReactDOM.render(
+  // <Provider/> makes the Redux store available
+  // to any nested components that have been
+  // wrapped in the connect() function
   <Provider store={configureStore()}>
     <App />
   </Provider>,
