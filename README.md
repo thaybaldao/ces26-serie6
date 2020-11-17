@@ -4,6 +4,8 @@ This project was developed as an assignment for CES-26 course of Instituto Tecno
 It is a React App for a calculator that uses Redux to deal with its states. 
 Besides the four basic arithmetic operations, this calculator also supports floating point operations and contains clear and backspace buttons.
 
+![Calculator](calculator.png)
+
 ## Project Structure
     ├── public                    # static files
     ├── src                       # dynamic files
@@ -16,7 +18,7 @@ Besides the four basic arithmetic operations, this calculator also supports floa
      ├── App.js                   # implements calculator interface
      ├── index.js                 # integrates react and redux
    
-## Redux actions implemented:
+## Redux actions implemented
 
 - `SET_EXPRESSION`: adds entries to the arithmetic expression.
 - `EVALUATE_EXPRESSION`: calculates the result of the arithmetic expression.
